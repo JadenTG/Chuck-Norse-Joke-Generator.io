@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ditty</title>
+
+    <!--<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap" rel="stylesheet">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,700&display=swap" rel="stylesheet">
+
+    <style>
+
+        body{
+            background-image: url(ChuckNorris.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* font-family: 'Titillium Web', sans-serif; */
+            font-family: 'Titillium Web', sans-serif;
+        }
+
+        #theFather{
+            display: flex;
+            justify-content: center;
+            margin-top: 20vh;
+            margin-bottom: 10vh;
+        }
+
+        #output{
+            text-align: center;
+            padding: 15px;
+        }
+
+        #btn{
+            transition: .25s;
+            background-color: #B7D8BDff;
+            border: solid 1px black;
+            color: black;
+            border-radius: 5px;
+            width: 200px;
+            height: 50px;
+            cursor: pointer;
+            /* font-family: 'Titillium Web', sans-serif; */
+            font-family: 'Titillium Web', sans-serif;
+        }
+
+        #btn:hover{
+            box-shadow: 0 7px 12px 0 rgb(148, 175, 153),0 .20px  20px 0 rgb(148, 175, 153);
+            scale: 1.01;
+            color: white;
+            background-color: rgb(147, 174, 152);
+        }
+
+        #btn:active{
+            background-color: rgb(147, 174, 152);
+            box-shadow: 0 5px rgba(0,0,0,0.24);
+            color: white;
+            transform: translateY(2px);
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id = "theFather">
+
+        <button id = "btn">Generate Tale</button>
+
+    </div>
+
+    <output id = "output">
+
+        <h1 id = "one"></h1>
+
+    </output>
+    
+    <script src = "script.js"></script>
+</body>
+</html>
